@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    color:goldenrod;
+    background-color: black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 5fr));
+    grid-gap: 100px;
+  }
+  
+  .tile {
+    width: 20%;
+    height: 100px;
+    background-color: #f1ebeb;
+    animation: moveTile 2s infinite alternate;
+  }
+  
+  @keyframes moveTile {
+    from {
+      transform: translatey(0);
+    }
+    to {
+      transform: translatey(500%);
+    }
+  }
+  
+  .mark{
+    text-align: center;
+background-color: cadetblue;
+}
+.grade{
+    text-align: center;
+    color: rgb(17, 19, 18);
+}
